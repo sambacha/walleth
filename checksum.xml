@@ -4835,6 +4835,9 @@
     <dependency group='com.squareup.leakcanary' module='leakcanary-android' version='2.3' extension='aar'>
       <sha512>11769E220A2559BD609C3A7212A5AA4C982726BCC936ECE4D9EF547F1278535C2BA1BC20B576DBA8DB2183A19877E5C5C0BA39D37869FABCD92744841FD32DB6</sha512>
     </dependency>
+    <dependency group='com.squareup.leakcanary' module='leakcanary-android' version='2.4' extension='aar'>
+      <sha512>D9F54CB1D7A85946DDA08DB850173F2DA7F57516C78F01C9452235F608AA283517D5FABD74611CD6A346F42AA371D913CEE0B686949C81D1E48C75CEACF2780C</sha512>
+    </dependency>
     <dependency group='com.squareup.leakcanary' module='leakcanary-object-watcher-android-androidx' version='2.0' extension='aar'>
       <sha512>927F46F3C7875F9E17A7DCB893DEBF12D99E7029C433444CE4282302C4ADA74710B7BDD89C92B72FB922B22B56B482C17DC328DB23183EFB705A45CB08F40DBE</sha512>
     </dependency>
