@@ -7,6 +7,7 @@
 
 [WIP] Besu - see: https://github.com/sambacha/walleth/commit/974784e9a66e153c89fba21f688c69fa6a210c30
 
+Additionally: ETH Signer - Priv, Key
 Issues: Not IBFT2 Compatible, see 
 
 https://github.com/sambacha/walleth/blob/73eb26330ad72983b403095f160db5b7d73e0e6e/app/schemas/org.walleth.data.AppDatabase/2.json#L146
