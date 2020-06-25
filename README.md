@@ -3,6 +3,36 @@
 [![on Google Play](https://ligi.de/img/play_badge.png)](https://play.google.com/store/apps/details?id=org.walleth)
 [![on FDroid](https://ligi.de/img/fdroid_badge.png)](https://f-droid.org/repository/browse/?fdid=org.walleth)
 
+## Besu Walleth
+
+[WIP] Besu - see: https://github.com/sambacha/walleth/commit/974784e9a66e153c89fba21f688c69fa6a210c30
+
+Issues: Not IBFT2 Compatible, see 
+
+https://github.com/sambacha/walleth/blob/73eb26330ad72983b403095f160db5b7d73e0e6e/app/schemas/org.walleth.data.AppDatabase/2.json#L146
+
+https://github.com/sambacha/walleth/blob/73eb26330ad72983b403095f160db5b7d73e0e6e/app/schemas/org.walleth.data.AppDatabase/2.json#L192
+
+
+
+https://sourcegraph.com/github.com/sambacha/walleth/-/commit/50ba271059c9024910128f1d763d23633b396342#diff-cfeee7dd7a6626a9d40b82eaf3c86797R192
+
+```
+
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`hash` TEXT NOT NULL, `extraIncomingAffectedAddress` TEXT, `chain` TEXT, `creationEpochSecond` INTEGER, `from` TEXT, `gasLimit` TEXT NOT NULL, `gasPrice` TEXT NOT NULL, `input` TEXT NOT NULL, `nonce` TEXT, `to` TEXT, `txHash` TEXT, `value` TEXT NOT NULL, `r` TEXT, `s` TEXT, `v` INTEGER, `needsSigningConfirmation` INTEGER NOT NULL, `source` TEXT NOT NULL, `relayed` TEXT NOT NULL, `eventLog` TEXT, `isPending` INTEGER NOT NULL, `error` TEXT, PRIMARY KEY(`hash`))",
+
+```
+
+```
+          {
+            "fieldPath": "extraIncomingAffectedAddress",
+            "columnName": "extraIncomingAffectedAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+
+```
+
 
 WallΞTH
 =======
@@ -11,6 +41,7 @@ Native Android Ethereum wallet.
 
 Features
 ========
+
 
  - Networks main, görli, rinkeby, ropsten, kovan, POA, sokol, ETC, xDAI
  - Keys on your device under your control
